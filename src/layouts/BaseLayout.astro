@@ -1,0 +1,27 @@
+---
+import Navbar from "../components/Navbar.svelte";
+
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+
+const pathname = new URL(Astro.request.url).pathname;
+const sitename = pathname.slice(1);
+---
+
+<!DOCTYPE html>
+<html lang="en" data-theme="lumisxh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Navbar sitename={sitename} client:load />
+    <slot />
+  </body>
+</html>
