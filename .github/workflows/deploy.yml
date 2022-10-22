@@ -17,13 +17,19 @@ jobs:
     - name: Check out your repository using git
       uses: actions/checkout@v2
 
-    - name: Use Node.js 16
-      uses: actions/setup-node@v2
+    - name: Install Node.js
+      uses: actions/setup-node@v3
       with:
-        node-version: '16'
+        node-version: 16
+    - name: Install pnpm
+      uses: pnpm/action-setup@v2.0.1
+      id: pnpm-install
+      with:
+        version: 7
+        run_install: false
 
     - name: Install dependencies
-      run: pnpm ci
+      run: pnpm install
 
     - name: Build Astro
       run: pnpm run build --if-present
