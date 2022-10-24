@@ -51,7 +51,7 @@
 </script>
 
 <nav
-  class="navbar border-b sticky top-0 left-0 border-accent bg-base-100 z-40 h-14"
+  class="navbar border-b sticky top-0 left-0 border-lumisxh-accent bg-base-100 z-40 h-14"
 >
   <div class="navbar-start">
     <div class="dropdown">
@@ -60,12 +60,12 @@
       </span>
       <ul
         tabindex="0"
-        class="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 bg-base-100"
+        class="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 bg-black"
       >
         {#each navLinks as navlink}
           <li>
             <a
-              class="m2 bg-clip-text bg-gradient-to-r from-primary via-accent to-error"
+              class="m2 bg-clip-text bg-gradient-to-r from-lumisxh-primary via-lumisxh-accent to-lumisxh-error"
               class:text-transparent={navlink.active}
               class:font-bold={navlink.active}
               href={navlink.href}
@@ -78,18 +78,21 @@
           {#each dropdownNavLinks as navlink}
             <span>
               <div
-                class="flex flex-row items-center text-center bg-clip-text bg-gradient-to-r from-primary via-accent to-error"
+                class="flex flex-row items-center text-center bg-clip-text bg-gradient-to-r from-lumisxh-primary via-lumisxh-accent to-lumisxh-error"
                 class:text-transparent={navlink.active}
                 class:font-bold={navlink.active}
               >
-                {navlink.parent}<ChevronRight size="12" class="text-neutral" />
+                {navlink.parent}<ChevronRight
+                  size="12"
+                  class="text-lumisxh-neutral"
+                />
               </div>
             </span>
-            <ul class="bg-base-100">
+            <ul class="bg-black">
               {#each navlink.pages as item}
                 <li>
                   <a
-                    class="m2 bg-clip-text bg-gradient-to-r from-primary via-accent to-error"
+                    class="m2 bg-clip-text bg-gradient-to-r from-lumisxh-primary via-lumisxh-accent to-lumisxh-error"
                     class:text-transparent={item.active}
                     class:font-bold={item.active}
                     href={item.href}
@@ -110,7 +113,7 @@
       {#each navLinks as navlink}
         <li>
           <a
-            class="m2 bg-clip-text bg-gradient-to-r from-primary via-accent to-error"
+            class="m2 bg-clip-text bg-gradient-to-r from-lumisxh-primary via-lumisxh-accent to-lumisxh-error"
             class:text-transparent={navlink.active}
             class:font-bold={navlink.active}
             href={navlink.href}
@@ -124,18 +127,21 @@
           <div class="dropdown dropdown-right dropdown-hover z-50">
             <span>
               <div
-                class="flex flex-row items-center text-center bg-clip-text bg-gradient-to-r from-primary via-accent to-error"
+                class="flex flex-row items-center text-center bg-clip-text bg-gradient-to-r from-lumisxh-primary via-lumisxh-accent to-lumisxh-error"
                 class:text-transparent={navlink.active}
                 class:font-bold={navlink.active}
               >
-                {navlink.parent}<ChevronRight size="12" class="text-neutral" />
+                {navlink.parent}<ChevronRight
+                  size="12"
+                  class="text-lumisxh-neutral"
+                />
               </div>
             </span>
-            <ul tabIndex={0} class="dropdown-content menu bg-base-100">
+            <ul tabIndex={0} class="dropdown-content menu bg-black">
               {#each navlink.pages as item}
                 <li>
                   <a
-                    class="m2 bg-clip-text bg-gradient-to-r from-primary via-accent to-error"
+                    class="m2 bg-clip-text bg-gradient-to-r from-lumisxh-primary via-lumisxh-accent to-lumisxh-error"
                     class:text-transparent={item.active}
                     class:font-bold={item.active}
                     href={item.href}

@@ -39,7 +39,7 @@
   {#each skills as skill}
     <div class="flex flex-col w-full justify-center items-center">
       <div
-        class="card card-compact w-96 backdrop-blur-md rounded-xl shadow-2xl p-2 shadow-base-100"
+        class="card card-compact w-96 backdrop-blur-md rounded-xl shadow-2xl p-2 shadow-black"
       >
         <figure class="flex justify-center">
           <img src={skill.img} alt={skill.name} class="w-28 h-28" />
@@ -49,7 +49,7 @@
           <p>{skill.desc}</p>
           <div class="card-actions">
             <a
-              class="btn bg-gradient-to-r from-primary via-accent to-error border-none text-bold text-neutral hover:opacity-75"
+              class="btn bg-gradient-to-r from-lumisxh-primary via-lumisxh-accent to-lumisxh-error border-none text-bold text-lumisxh-neutral hover:opacity-75"
               href={"projects#" + skill.name}>Show Projects</a
             >
           </div>

@@ -5,15 +5,17 @@ module.exports = {
 		extend: {
 			colors: {
 				transparent: 'transparent',
-				bf: {
-					red: "#FF2C10",
-					blue: "#26FFDF"
+				lumisxh: {
+					"primary": "#F09E03",
+        			"secondary": "#F06F03",
+					"accent": "#F01A03",
+					"neutral": "#ffffff",
+					"base-100": "#000000",
+					"info": "#D803F0",
+					"success": "#03F099",
+					"warning": "#F0C803",
+					"error": "#F00372",
 				},
-				new: {
-					black: "#181818",
-					purple: "#8650C4",
-					yellow: "#FFD166",
-				}
 			},
 		}
 	},
