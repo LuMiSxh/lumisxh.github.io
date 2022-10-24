@@ -51,7 +51,7 @@
 </script>
 
 <nav
-  class="navbar border-b sticky top-0 left-0 border-lumisxh-accent bg-base-100 z-40 h-14"
+  class="navbar border-b sticky top-0 left-0 border-lumisxh-accent bg-black z-40 h-14"
 >
   <div class="navbar-start">
     <div class="dropdown">
