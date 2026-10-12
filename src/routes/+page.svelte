@@ -26,6 +26,10 @@
 	<meta property="og:image:width" content="1500" />
 	<meta property="og:image:height" content="500" />
 	<meta name="twitter:card" content="summary_large_image" />
+	<meta
+		name="google-site-verification"
+		content="rKSkIR3sV4QdLRzh6LfguydNElkuRCFjlw7EIqDHnyI"
+	/>
 	{@html `<script type="application/ld+json">${jsonLd}</script>`}
 </svelte:head>
 
